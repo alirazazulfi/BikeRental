@@ -2,13 +2,13 @@
 
 ## Instructions 
 1. Open the Project in Visual Studio.
-2. Run the Database Migrations place in **BikeRental.Repository** project.
-3. After database migrations you can run the project **BikeRental** 
+2. Run the Database Migration, placed in **BikeRental.Repository** project.
+3. After database migrations you can set **BikeRental** as **StartUp Project** and run the project  
 4. This will execute the Web view of the **Swagger OpenAPI** 
    * https://localhost:7261/swagger/index.html
 5. First Login using Manager or User by the given credentials below.
-6. Use the Bearer token generated after the login to get the access of the other api enpoints. 
-7. Click on the Authorize Button on the top of the page and enter the Bearer Token.
+6. Use the **Bearer Token** generated after the login to get the access of the other api enpoints. 
+7. Click on the **Authorize Button** on the top of the page and enter the **Bearer Token**.
 8. API's are restricted according to their access level. eg. Manager cannot access the API's which are only for the Users. and vice versa.  
 
 
