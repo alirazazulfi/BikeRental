@@ -46,9 +46,25 @@ Write an application to manage bike rentals:
   * **SignUp: /api/SignUp**
 
 ### Manager 
-* Manage Bikes:
-   * Get List of all Bikes to show in grid - **/api/Bike/Get**
-   * Get Bike by ID to show in edit page - **/api/Bike/GetById**
-   * Add Bike - POST - **/api/Bike**
-   * Update Bike - PUT - **/api/Bike**
-   * Delete Bike (soft delete) - DELETE - **/api/Bike**
+* Bikes Management:
+   * Get List of all Bikes to show in grid. - GET - **/api/Bike**
+   * Get Bike by ID to show in edit page. - GET - **/api/Bike/GetById**
+   * Add Bike. - POST - **/api/Bike**
+   * Update Bike. - PUT - **/api/Bike**
+   * Delete Bike (soft delete). - DELETE - **/api/Bike**
+   
+* Users Management  (Users and Managers):
+   * Get List of all user to show in grid. - GET - **/api/User**
+   * Get user by ID to show in edit page. - GET - **/api/User/GetById**
+   * Add user. - POST - **/api/User**
+   * Update user. - PUT - **/api/User**
+   * Delete user (soft delete). - DELETE - **/api/User**
+
+* Reservation Report By Users:
+   * Get all the users who reserved a bike, and the period of time they did it. - GET - **/api/User/UserReport** 
+   * 
+* Reservation Report By Bikes:
+   * Get all the bikes reserved by a user and the period of time they did it. - GET - **/api/Bike/BikeReport** 
+
+
+
