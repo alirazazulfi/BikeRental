@@ -1,7 +1,15 @@
 # BikeRental
 
 ## Instructions 
-
+1. Open the Project in Visual Studio.
+2. Run the Database Migrations place in **BikeRental.Repository** project.
+3. After database migrations you can run the project **BikeRental** 
+4. This will execute the Web view of the **Swagger OpenAPI** 
+   * https://localhost:7261/swagger/index.html
+5. First Login using Manager or User by the given credentials below.
+6. Use the Bearer token generated after the login to get the access of the other api enpoints. 
+7. Click on the Authorize Button on the top of the page and enter the Bearer Token.
+8. API's are restricted according to their access level. eg. Manager cannot access the API's which are only for the Users. and vice versa.  
 
 
 ## Requirements 
@@ -34,10 +42,10 @@ Write an application to manage bike rentals:
 * **User :**
   * Username: user1
   * Password:  user123
----------------------------  
+  
   * Username: user2
   * Password:  user123
----------------------------  
+  
   * Username: user3
   * Password:  user123
 
@@ -61,10 +69,18 @@ Write an application to manage bike rentals:
    * Delete user (soft delete). - DELETE - **/api/User**
 
 * Reservation Report By Users:
-   * Get all the users who reserved a bike, and the period of time they did it. - GET - **/api/User/UserReport** 
+   * Get all the users who reserved a bike, and the period of time they did it. - GET - **/api/Reservation/UserReport** 
    * 
 * Reservation Report By Bikes:
-   * Get all the bikes reserved by a user and the period of time they did it. - GET - **/api/Bike/BikeReport** 
+   * Get all the bikes reserved by a user and the period of time they did it. - GET - **/api/Reservation/BikeReport** 
 
-
-
+### User 
+* Reservation:
+   * Reserve a bike for a specific period of time. - POST - **/api/Reservation/ReserveBike**
+   * Cancel a reservation. - POST - **/api/Reservation/Cancel**
+   * Get List of Bike Reservation for logged in user. - GET - **/api/Reservation/GetForUser** 
+   
+* Bike:
+   * See a list of all available bikes for some specific dates.. - POST - **/api/Bikes/AvailableBikes**
+   * Filter by model, color, location, or rate averages. - POST - **/api/Bike/Search**
+   * Rate the bikes with a score of 1 to 5. - POST - **/api/Bike/Rating**
