@@ -36,7 +36,7 @@ Write an application to manage bike rentals:
 
 ## Login Details
 * **Manager :**
-  * Username: devadmin 
+  * Username: admin 
   * Password:  admin123
 * **User :**
   * Username: user1 | user2 | user3
