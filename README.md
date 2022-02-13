@@ -11,7 +11,6 @@
 7. Click on the **Authorize Button** on the top of the page and enter the **Bearer Token**.
 8. API's are restricted according to their access level. eg. Manager cannot access the API's which are only for the Users. and vice versa.  
 
-
 ## Task Requirements 
 The requirements for the test project are: 
 Write an application to manage bike rentals:
@@ -76,3 +75,27 @@ Write an application to manage bike rentals:
    * See a list of all available bikes for some specific dates.. - POST - **/api/Bikes/AvailableBikes**
    * Filter by model, color, location, or rate averages. - POST - **/api/Bike/Search**
    * Rate the bikes with a score of 1 to 5. - POST - **/api/Bike/Rating**
+
+
+##Technology and Architechture
+**.Net 6 Web API**
+**Clean architecture** and **SOLID principals** are implemented on this application, so application can be designed with very low coupling, separation of concerns and it will be independent of technical implementation details, such as databases and frameworks. That way, the application becomes easy to maintain and flexible to change. It also becomes intrinsically testable
+
+**Benefits of this kind of architecture:**
+
+**1- Immediate implementation**
+You can implement it with any webforms, mcv, core or other applications
+
+**2- Focus on the domain of the application**
+This means that the primary focus of the project is placed on the core and logic of the domain.
+
+**3- Possibility of changes**
+This architecture allows important changes to the application, without major impacts:
+  * You could change the framework used if necessary, since everything is decoupled. 
+  * You could also change the database you use or add another if you need it.
+
+**4- Expected test**
+You have the opportunity to test quickly and easily.
+
+**5- Optimal results**
+You will create a solid, quality and scalable product.
