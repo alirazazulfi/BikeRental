@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BikeRental.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220213075656_InitialSeed")]
+    [Migration("20220213143201_InitialSeed")]
     partial class InitialSeed
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -66,6 +66,92 @@ namespace BikeRental.Repository.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Bikes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("a4402ec5-5776-45d7-af9f-955a1d791bd7"),
+                            Color = "Red",
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(535),
+                            IsAvailable = true,
+                            IsDeleted = false,
+                            Location = "Lahore",
+                            Model = "2020",
+                            Name = "Bike 1",
+                            PerDayRate = 20m
+                        },
+                        new
+                        {
+                            Id = new Guid("10d9d5ae-4081-42db-ad22-b816dc83f95c"),
+                            Color = "Red",
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(564),
+                            IsAvailable = true,
+                            IsDeleted = false,
+                            Location = "Lahore",
+                            Model = "2020",
+                            Name = "Bike 2",
+                            PerDayRate = 20m
+                        },
+                        new
+                        {
+                            Id = new Guid("a18ec84e-cb5c-4f43-94ef-1bacc3e233b5"),
+                            Color = "Black",
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(585),
+                            IsAvailable = true,
+                            IsDeleted = false,
+                            Location = "Lahore",
+                            Model = "2021",
+                            Name = "Bike 3",
+                            PerDayRate = 22m
+                        },
+                        new
+                        {
+                            Id = new Guid("be19ac72-c39d-40ac-a381-f3e8e822a330"),
+                            Color = "Red",
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(604),
+                            IsAvailable = true,
+                            IsDeleted = false,
+                            Location = "Islamabad",
+                            Model = "2021",
+                            Name = "Bike 4",
+                            PerDayRate = 20m
+                        },
+                        new
+                        {
+                            Id = new Guid("9d0d6bc7-ceba-4ea0-95ec-523d6abb9bfc"),
+                            Color = "Blue",
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(623),
+                            IsAvailable = true,
+                            IsDeleted = false,
+                            Location = "Islamabad",
+                            Model = "2022",
+                            Name = "Bike 5",
+                            PerDayRate = 30m
+                        },
+                        new
+                        {
+                            Id = new Guid("fd1e5955-1894-4099-9b56-b88d44719c3d"),
+                            Color = "Blue",
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(655),
+                            IsAvailable = true,
+                            IsDeleted = false,
+                            Location = "Lahore",
+                            Model = "2022",
+                            Name = "Bike 6",
+                            PerDayRate = 28m
+                        },
+                        new
+                        {
+                            Id = new Guid("67318c6b-6b0d-447e-bff4-8f10f01f9038"),
+                            Color = "Green",
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(675),
+                            IsAvailable = true,
+                            IsDeleted = false,
+                            Location = "Islamabad",
+                            Model = "2022",
+                            Name = "Bike 7",
+                            PerDayRate = 29m
+                        });
                 });
 
             modelBuilder.Entity("BikeRental.Entities.DBEtities.BikeRating", b =>
@@ -196,6 +282,60 @@ namespace BikeRental.Repository.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("6e65acda-ef76-4aa5-84a5-51e6ab71f416"),
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 303, DateTimeKind.Utc).AddTicks(9749),
+                            Email = "admin@test.com",
+                            FirstName = "Admin",
+                            IsDeleted = false,
+                            LastName = "Manager",
+                            Mobile = "+92",
+                            Password = "97mm7aQpKjwGWKfNn8O2bA==",
+                            UserRole = 1,
+                            Username = "admin"
+                        },
+                        new
+                        {
+                            Id = new Guid("e826556b-2ebd-44bc-a55e-0fbafd638e4a"),
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(53),
+                            Email = "user1@test.com",
+                            FirstName = "User",
+                            IsDeleted = false,
+                            LastName = "1",
+                            Mobile = "+92",
+                            Password = "xj1lmXKkp0EiWeynZIt1SA==",
+                            UserRole = 2,
+                            Username = "user1"
+                        },
+                        new
+                        {
+                            Id = new Guid("8ddba530-b73a-4670-aef2-6f36f44a1021"),
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(211),
+                            Email = "user2@test.com",
+                            FirstName = "User",
+                            IsDeleted = false,
+                            LastName = "2",
+                            Mobile = "+92",
+                            Password = "xj1lmXKkp0EiWeynZIt1SA==",
+                            UserRole = 2,
+                            Username = "user2"
+                        },
+                        new
+                        {
+                            Id = new Guid("77ded07d-b5aa-4475-9f52-1f415513a5f5"),
+                            CreatedDate = new DateTime(2022, 2, 13, 14, 32, 1, 304, DateTimeKind.Utc).AddTicks(492),
+                            Email = "user3@test.com",
+                            FirstName = "User",
+                            IsDeleted = false,
+                            LastName = "3",
+                            Mobile = "+92",
+                            Password = "xj1lmXKkp0EiWeynZIt1SA==",
+                            UserRole = 2,
+                            Username = "user3"
+                        });
                 });
 
             modelBuilder.Entity("BikeRental.Entities.DBEtities.BikeRating", b =>

@@ -11,12 +11,12 @@ namespace BikeRental.Repository
             builder.Entity<User>().HasData(new User
             {
                 Id = Guid.NewGuid(),
-                FirstName = "Ali",
-                LastName = "Raza",
+                FirstName = "Admin",
+                LastName = "Manager",
                 UserRole = 1, //--Manager
-                Username = "devadmin",
-                Email = "alirazazulfi@gmail.com",
-                Mobile = "+923438506556",
+                Username = "admin",
+                Email = "admin@test.com",
+                Mobile = "+92",
                 Password = EncryptionManager.Encrypt("admin123"),
                 CreatedDate = DateTime.UtcNow
             }); 

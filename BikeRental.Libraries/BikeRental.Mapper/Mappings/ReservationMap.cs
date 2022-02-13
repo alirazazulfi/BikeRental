@@ -31,10 +31,10 @@ namespace BikeRental.Mapper.Mappings
             EndDate = dto.EndDate,
 
             PerDayRate = PerDayRate,
-            Total = (decimal)(dto.EndDate - dto.StartDate).TotalDays * PerDayRate,
+            Total = (decimal)((dto.EndDate - dto.StartDate).TotalDays + 1) * PerDayRate,
 
             BikeId = dto.BikeId,
-            UserId = UserId, 
+            UserId = UserId,
             CreatedDate = DateTime.UtcNow
         };
 
