@@ -1,0 +1,17 @@
+/.vs
+/BikeRental/obj
+/BikeRental/bin
+/BikeRental.Libraries/BikeRental.Business/obj
+/BikeRental.Libraries/BikeRental.Business/bin
+/BikeRental.Libraries/BikeRental.Common/obj
+/BikeRental.Libraries/BikeRental.Common/bin
+/BikeRental.Libraries/BikeRental.DTO/obj
+/BikeRental.Libraries/BikeRental.DTO/bin
+/BikeRental.Libraries/BikeRental.Entities/obj
+/BikeRental.Libraries/BikeRental.Entities/bin
+/BikeRental.Libraries/BikeRental.Mapper/obj
+/BikeRental.Libraries/BikeRental.Mapper/bin
+/BikeRental.Libraries/BikeRental.Middleware/obj
+/BikeRental.Libraries/BikeRental.Middleware/bin
+/BikeRental.Libraries/BikeRental.Repository/obj
+/BikeRental.Libraries/BikeRental.Repository/bin

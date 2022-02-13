@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BikeRental.DTO\BikeRental.DTO.csproj" />
+    <ProjectReference Include="..\BikeRental.Entities\BikeRental.Entities.csproj" />
+    <ProjectReference Include="..\BikeRental.Mapper\BikeRental.Mapper.csproj" />
+    <ProjectReference Include="..\BikeRental.Middleware\BikeRental.Middleware.csproj" />
+  </ItemGroup>
+
+</Project>
