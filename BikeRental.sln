@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeRental.DTO", "BikeRenta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeRental.Mapper", "BikeRental.Libraries\BikeRental.Mapper\BikeRental.Mapper.csproj", "{21D13297-9493-4F43-868E-6C69F1C13EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeRental.Common", "BikeRental.Libraries\BikeRental.Common\BikeRental.Common.csproj", "{38494082-E751-4165-8962-0EEC9D1993D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeRental.Common", "BikeRental.Libraries\BikeRental.Common\BikeRental.Common.csproj", "{38494082-E751-4165-8962-0EEC9D1993D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
